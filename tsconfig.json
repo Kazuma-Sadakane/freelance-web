@@ -16,11 +16,18 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
-      "@/styles/*": ["styles/*"]
+      "@/layouts/*": ["src/view/layouts/*"],
+      "@/components/*": ["src/view./components/*"],
+      "@/public/*": ["./public/*"],
+      "@/firebase/*": ["src/infrastructure/firebase/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types.d.ts",
+    "src/infrastructure/firebase/firebase.config.ts"
+  ],
   "exclude": ["node_modules", "test", "*.test.*", "*.stories.*"]
 }

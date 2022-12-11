@@ -7,12 +7,10 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
 export const Base = Template.bind({});
 
-Base.args = {
-  label: 'button',
-  // style: {backgroundColor: 'red'},
-  className: 'bg-gray-600',
-} as ButtonProps;
+Base.args = {className: 'w-auto h-auto bg-black text-white'} as ButtonProps;

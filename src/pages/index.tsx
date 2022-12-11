@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
-import styles from '@/pages/index.module.css';
+import styles from './index.module.css';
 
 const Home: React.FC = () => {
   return (

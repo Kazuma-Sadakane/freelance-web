@@ -3,7 +3,7 @@ import {Button} from './Button';
 
 test('render button', () => {
   const onClick = jest.fn();
-  render(<Button label="clickMe" onClick={onClick} />);
+  render(<Button onClick={onClick}>Button</Button>);
   const buttonElement = screen.getByText('clickMe');
   fireEvent.click(buttonElement);
   expect(onClick).toHaveBeenCalledTimes(1);
